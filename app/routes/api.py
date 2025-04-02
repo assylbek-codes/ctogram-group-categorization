@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from app.models.schema import CarIssueRequest, CarIssueResponse
 from app.utils.llm import (
-    classify_car_issue_with_hashtags
+    classify_car_issue
 )
 
 router = APIRouter()
@@ -17,7 +17,8 @@ async def classify_issue(request: CarIssueRequest):
         raise HTTPException(status_code=400, detail="Text cannot be empty")
 
     try:
-        group, group_id, categories_ids, categories = classify_car_issue_with_hashtags(request.text)
+        # group, group_id, categories_ids, categories = classify_car_issue_with_hashtags(request.text)
+        group, group_id, categories_ids, categories = classify_car_issue(request.text)
         
         return CarIssueResponse(
             group=group,

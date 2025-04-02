@@ -1,14 +1,13 @@
 # Car Issue Classification API
 
-This API classifies car issues based on text descriptions into specific groups and categories using AI. It is designed to be integrated into car garage platforms.
+This API classifies car issues based on text descriptions into specific groups and categories using LLM. It is designed to be integrated into car garage platforms.
 
 ## Features
 
 - Classify car issue descriptions into specific groups
-- Further categorize issues within each group based on predefined hashtags
+- Further categorize issues within the group
 - Support for both OpenAI and Groq LLM providers
-- Direct hashtag matching for fast, accurate classification without LLM calls
-- Enhanced LLM classification with hashtag-guided approach
+- Enhanced LLM classification
 - Simple, focused REST API with a single classification endpoint
 - Ready to deploy on fly.dev
 
@@ -78,19 +77,12 @@ Parameters:
 ```json
 {
     "group": "Замена масла и жидкостей",
-    "categories": ["Default Category"],
-    "confidence": 0.92,
+    "group_id": 25,
+    "categories": {},
+    "categories_ids": [],
     "method_used": "hashtag_match"
 }
 ```
-
-Response fields:
-- `group`: The classified group name
-- `categories`: List of categories within the group
-- `confidence`: Confidence score (only when using hashtag matching)
-- `method_used`: The method used for classification:
-  - `"hashtag_match"`: Used direct keyword matching against hashtags
-  - `"llm_with_hashtags"`: Used the LLM approach with hashtag information
 
 ### GET /api/v1/health
 
@@ -163,26 +155,6 @@ curl -X POST "http://localhost:8000/api/v1/classify" \
     "text": "Сломалась рулевая рейка, течет жидкость"
   }'
 ```
-
-## Classification Methods
-
-The API uses a two-step approach to classify car issues:
-
-1. **Direct Hashtag Matching (First)**
-   - Directly matches text against the hashtags/keywords from your configuration
-   - Extremely fast and efficient - no API calls needed
-   - Returns the group and categories with the most keyword matches
-   - Most accurate when text contains specific technical terms
-
-2. **Hashtag-Enhanced LLM Classification (Fallback)**
-   - If hashtag matching doesn't provide confident results
-   - Uses the hashtags and descriptions to guide the LLM
-   - First identifies potential categories across all groups using hashtags
-   - Then determines the appropriate group based on the identified categories
-
-For best results:
-1. Make sure your hashtags thoroughly cover the terminology users might use
-2. Ensure your hashtags match common terms that appear in customer requests
 
 ## License
 

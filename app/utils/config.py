@@ -130,95 +130,95 @@ GROUP_CATEGORIES: Dict[str, Dict[str, List[str]]] = {
 
 # Define category descriptions for СТО group
 STO_CATEGORY_DESCRIPTIONS = {
-    "Рулевой механизм": "Issues with steering mechanisms, power steering, steering racks, and related components",
-    "Ремонт печка/кондиционер/радиатор": "Repair of heating systems, air conditioning, radiators, and climate control components",
-    "Ремонт стекол": "Repair of car windows, windshields, glass damage, tinting, and related issues",
-    "Ремонт ходовой/подвески/геометрия": "Repair of suspension, chassis, wheel alignment, and related components",
-    "Автоэлектрики/компьют диагностика": "Automotive electrical issues, computer diagnostics, sensors, and electronic systems",
-    "Чип тюнинг": "ECU tuning, performance chip installation, and related services",
-    "Ремонт топливной системы": "Repair of fuel systems, fuel pumps, injectors, and related components",
-    "Сварочные/токарные работы": "Welding, machining, and metal fabrication services",
-    "Трансмиссия АКПП/МКПП/Вариатор": "Repair of transmissions, both automatic and manual, clutches, and related components",
-    "Выхлопная система/Ремонт турбин": "Exhaust system repairs, mufflers, catalytic converters, and turbocharger repairs",
-    "Ремонт стартера / генератора": "Repair and replacement of starters, alternators, and related electrical systems",
-    "Другое": "Other automotive repairs and services not categorized elsewhere",
-    "Ремонт/замена двигателя и навесного": "Engine repairs, replacements, and related components like belts, pumps, etc."
+    "Рулевой механизм": "Проблемы с рулевым управлением, включая неисправности рулевой рейки, гидроусилителя и подвески руля.",
+    "Ремонт печка/кондиционер/радиатор": "Неполадки в работе печки, системы кондиционирования или радиатора, влияющие на климат-контроль.",
+    "Ремонт стекол": "Повреждения или трещины в стеклах, требующие ремонта или замены.",
+    "Ремонт ходовой/подвески/геометрия": "Нарушения работы подвески, элементов ходовой части или проблемы с регулировкой углов колес.",
+    "Автоэлектрики/компьют диагностика": "Ошибки в электрооборудовании автомобиля, включая датчики, системы управления и компьютерную диагностику.",
+    "Чип тюнинг": "Изменение программного обеспечения для оптимизации работы двигателя и повышения его производительности.",
+    "Ремонт топливной системы": "Проблемы с подачей топлива, включая неисправности насосов, форсунок и системы впрыска.",
+    "Сварочные/токарные работы": "Металлические ремонтные работы, включая сварку и токарную обработку деталей.",
+    "Трансмиссия АКПП/МКПП/Вариатор": "Неисправности коробки передач, будь то автоматическая, механическая или вариатор, включая замену сцеплений.",
+    "Выхлопная система/Ремонт турбин": "Проблемы с выхлопной системой, такие как повреждения или неисправности турбокомпрессоров.",
+    "Ремонт стартера / генератора": "Нарушения работы стартера или генератора, влияющие на запуск и питание автомобиля.",
+    "Другое": "Другие ремонтные работы и услуги, не включенные в другие категории.",
+    "Ремонт/замена двигателя и навесного": "Комплексные работы по ремонту или замене двигателя и смежных узлов, влияющих на его работу."
 }
 
 # Define category descriptions for Новые и разборы group
 NEW_AND_PARTS_CATEGORY_DESCRIPTIONS = {
-    "Расходники/жидкости/фильтры": "Consumables, fluids, filters, belts, and other regularly replaced parts",
-    "Аккумуляторы": "Car batteries, battery accessories, and related components",
-    "Салон и детали": "Interior parts including seats, panels, doors, mirrors, and cabin accessories",
-    "Электрика (датчики, моторчики)": "Electrical components including sensors, motors, wiring, and electronic parts",
-    "Трансмиссия АКПП/МКПП/Вариатор": "Transmission parts for automatic, manual transmissions, and continuously variable transmissions",
-    "Аксессуары/чехлы/полики": "Accessories, seat covers, floor mats, and other enhancement items",
-    "Другое": "Other parts and accessories not categorized elsewhere",
-    "Мультимедия/акустика/камеры": "Multimedia systems, speakers, cameras, and entertainment components",
-    "Стекла": "Windows, windshields, and glass components for cars",
-    "Двигатели и детали": "Engines and engine components including pistons, valves, belts, and related parts",
-    "Ходовка, рулевая/тормозная система": "Suspension, steering, and brake system components",
-    "Кузов/оптика/свет": "Body parts, lighting, headlights, and exterior components",
-    "Системы охлаждения и кондиционирования": "Cooling systems, air conditioning components, radiators, and related parts"
+    "Расходники/жидкости/фильтры": "Регулярно заменяемые элементы, такие как масла, фильтры, ремни и другие расходные материалы.",
+    "Аккумуляторы": "Проблемы с батареями и другими источниками питания, требующими замены или ремонта.",
+    "Салон и детали": "Внутренние элементы автомобиля, включая обивку, сиденья, панели и аксессуары салона.",
+    "Электрика (датчики, моторчики)": "Неисправности в электронике, связанные с датчиками, моторчиками и проводкой.",
+    "Трансмиссия АКПП/МКПП/Вариатор": "Проблемы, связанные с системами переключения передач и их компонентами.",
+    "Аксессуары/чехлы/полики": "Дополнительные элементы и аксессуары, такие как чехлы, коврики и декоративные вставки.",
+    "Другое": "Другие расходные материалы и аксессуары, не включенные в другие категории.",
+    "Мультимедия/акустика/камеры": "Системы развлечения и безопасности, включая аудио-системы и видеокамеры.",
+    "Стекла": "Повреждения или неисправности стекол, требующие ремонта или замены.",
+    "Двигатели и детали": "Проблемы с двигателем и его вспомогательными компонентами, такими как системы охлаждения и смазки.",
+    "Ходовка, рулевая/тормозная система": "Нарушения в работе подвески, рулевого управления или тормозной системы.",
+    "Кузов/оптика/свет": "Повреждения кузова, системы освещения или оптических элементов автомобиля.",
+    "Системы охлаждения и кондиционирования": "Проблемы с охлаждением и кондиционированием, включая радиаторы и системы вентиляции."
 }
 
 # Define category descriptions for Детейлинг и тюнинг group
 DETAILING_TUNING_CATEGORY_DESCRIPTIONS = {
-    "Default Category": "General detailing and tuning services"
+    "Общие услуги": "Общие услуги по улучшению внешнего вида и производительности автомобиля, включая чистку, полировку и несложный тюнинг."
 }
 
 # Define category descriptions for Кузовные работы и детейлинг group
 BODY_WORK_CATEGORY_DESCRIPTIONS = {
-    "Ремонт и покраска кузова/деталей": "Body repair and painting services for car exteriors and parts",
-    "Сигнализация": "Security and alarm system installation and repair",
-    "Тюнинг кузова и детали из стекловолокна": "Body tuning and fiberglass component installation",
-    "Покраска и восстановление дисков": "Wheel painting and restoration services",
-    "Полировка": "Polishing services for vehicle exteriors",
-    "Удаление вмятин без покраски": "Paintless dent removal and rust/chip repair",
-    "Автозвук / Автосвет": "Car audio systems and lighting upgrades",
-    "Другое": "Other bodywork and detailing services not categorized elsewhere",
-    "Двигатель, чип тюнинг": "Engine performance tuning and chip tuning services",
-    "Химчистка салона": "Interior cleaning and detailing services",
-    "Шумоизоляция / Перетяжка салона": "Sound insulation and interior upholstery services",
-    "Бронирование/плёнка/тонировка": "Vehicle wrapping, protective films, and window tinting",
-    "3D полики / Пошив чехлов": "Custom 3D floor mats and seat cover tailoring",
-    "Сварочные работы по кузову": "Welding services for car body components",
-    "Материалы для покраски авто": "Materials for car painting and refinishing"
+    "Ремонт и покраска кузова/деталей": "Восстановление повреждений кузова и элементов, включая покраску и ремонт мелких дефектов.",
+    "Сигнализация": "Установка и ремонт систем сигнализации и контроля доступа.",
+    "Тюнинг кузова и детали из стекловолокна": "Улучшение внешнего вида кузова и деталей из стекловолокна, включая покраску и полировку.",
+    "Покраска и восстановление дисков": "Покраска и восстановление дисков автомобиля.",
+    "Полировка": "Полировка кузова и деталей, включая полировку дисков и хромированных элементов.",
+    "Удаление вмятин без покраски": "Удаление вмятин без проведения полной покраски кузова.",
+    "Автозвук / Автосвет": "Установка и ремонт аудиосистем и световых элементов.",
+    "Другое": "Другие услуги по улучшению внешнего вида и производительности автомобиля, не включенные в другие категории.",
+    "Двигатель, чип тюнинг": "Оптимизация работы двигателя и повышение его производительности за счет изменения программного обеспечения.",
+    "Химчистка салона": "Чистка и уборка салона автомобиля, включая удаление пыли и грязи.",
+    "Шумоизоляция / Перетяжка салона": "Установка шумоизоляции и перетяжка салона автомобиля.",
+    "Бронирование/плёнка/тонировка": "Установка защитных плёнок, тонировка стекол и элементы бронирования для внешней защиты.",
+    "3D полики / Пошив чехлов": "Пошив 3D полики и чехлов для автомобиля.",
+    "Сварочные работы по кузову": "Сварные работы по кузову автомобиля.",
+    "Материалы для покраски авто": "Предоставление специализированных материалов и расходников для покрасочных работ."
 }
 
 # Define category descriptions for Замена масла и жидкостей group
 FLUID_CHANGE_CATEGORY_DESCRIPTIONS = {
-    "Замена тормозной жидкости": "Brake fluid replacement services",
-    "Замена антифриза": "Coolant and antifreeze replacement services",
-    "Замена/заправка фреона": "Refrigerant (freon) replacement and recharging for AC systems",
-    "Замена масла в коробке АКПП/МКПП": "Transmission fluid replacement for automatic and manual transmissions",
-    "Замена масла в двигателе": "Engine oil change services",
-    "Другое": "Other fluid replacement services not categorized elsewhere"
+    "Замена тормозной жидкости": "Обслуживание системы тормозов посредством замены тормозной жидкости.",
+    "Замена антифриза": "Обновление охлаждающей жидкости для предотвращения перегрева двигателя в холодную погоду.",
+    "Замена/заправка фреона": "Обслуживание кондиционера, включая замену или дозаправку фреона.",
+    "Замена масла в коробке АКПП/МКПП": "Замена масла в коробке передач автомобиля.",
+    "Замена масла в двигателе": "Замена масла в двигателе автомобиля.",
+    "Другое": "Другие замены жидкостей и расходников для автомобиля, не включенные в другие категории."
 }
 
 # Define category descriptions for Срочная выездная помощь group
 EMERGENCY_ASSISTANCE_CATEGORY_DESCRIPTIONS = {
-    "Автоэлектрик на выезд": "Mobile automotive electrical assistance services",
-    "Ремонт/замена стекол": "Mobile windshield and window repair or replacement",
-    "Трезвый водитель": "Designated driver services",
-    "Эвакуатор": "Towing and evacuation services",
-    "Выездной шиномонтаж": "Mobile tire changing and repair services",
-    "Прикурить": "Jump-start services for dead batteries",
-    "Отогрев": "Vehicle warming and thawing services in cold weather",
-    "Вскрытие замков": "Car lockout assistance and lock opening services",
-    "Изготовление ключей": "Key cutting and duplication services"
+    "Автоэлектрик на выезд": "Экстренная помощь по ремонту или диагностике электрооборудования автомобиля вне сервиса.",
+    "Ремонт/замена стекол": "Быстрый ремонт или замена стекол на месте",
+    "Трезвый водитель": "Услуги водителя для управления автомобилем, если владелец не может водить.",
+    "Эвакуатор": "Услуги по эвакуации автомобиля.",
+    "Выездной шиномонтаж": "Услуги по замене шин и ремонту колес.",
+    "Прикурить": "Услуга запуска двигателя автомобиля с разряженной батареей.",
+    "Отогрев": "Услуги по отогреву автомобиля.",
+    "Вскрытие замков": "Услуги по вскрытию замков автомобиля.",
+    "Изготовление ключей": "Услуги по изготовлению ключей для автомобиля."
 }
 
 # Define category descriptions for Установка газа на авто group
 GAS_INSTALLATION_CATEGORY_DESCRIPTIONS = {
-    "Установка газобаллонного оборудования": "Installation of gas equipment and LPG systems on vehicles",
-    "Ремонт газобаллонного оборудования": "Repair and maintenance of gas equipment and LPG systems"
+    "Установка газобаллонного оборудования": "Монтаж систем, позволяющих использовать сжиженный газ или LPG в автомобиле.",
+    "Ремонт газобаллонного оборудования": "Диагностика и ремонт существующих газовых систем, обеспечение их безопасной работы."
 }
 
 # Dictionary mapping groups to their category descriptions
 GROUP_CATEGORY_DESCRIPTIONS = {
     "СТО": STO_CATEGORY_DESCRIPTIONS,
-    # "Новые и разборы": NEW_AND_PARTS_CATEGORY_DESCRIPTIONS,
+    "Новые и разборы": NEW_AND_PARTS_CATEGORY_DESCRIPTIONS,
     "Детейлинг и тюнинг": DETAILING_TUNING_CATEGORY_DESCRIPTIONS,
     "Кузовные работы и детейлинг": BODY_WORK_CATEGORY_DESCRIPTIONS,
     "Замена масла и жидкостей": FLUID_CHANGE_CATEGORY_DESCRIPTIONS,
@@ -227,7 +227,7 @@ GROUP_CATEGORY_DESCRIPTIONS = {
 }
 
 GROUP_IDS = {
-    # "Новые и разборы": 2,
+    "Новые и разборы": 2,
     "Детейлинг и тюнинг": 5,
     "Кузовные работы и детейлинг": 3,
     "СТО": 1,
@@ -321,7 +321,7 @@ GROUP_CATEGORIES_IDS: Dict[str, Dict[str, int]] = {
         "Ремонт газобаллонного оборудования": 77
     }
 }
-# 21, 24, 81, 82, 72, 23, 53, 22, 17, 20, 15, 14, 94
+
 CATEGORIES_IDS = {
     "1": "Ремонт/замена двигателя и навесного",
     "2": "Ремонт ходовой/подвески/геометрия",
@@ -353,6 +353,9 @@ CATEGORIES_IDS = {
     "46": "Отогрев",
     "47": "Вскрытие замков",
     "48": "Изготовление ключей",
+    "52": "Другое",
+    "53": "Другое",
+    "56": "Другое",
     "57": "Прикурить",
     "62": "Удаление вмятин без покраски",
     "63": "Замена масла в двигателе",
@@ -376,5 +379,6 @@ CATEGORIES_IDS = {
     "92": "Сварочные работы по кузову",
     "93": "3D полики / Пошив чехлов",
     "94": "Системы охлаждения и кондиционирования",
+    "95": "Другое",
     "96": "Материалы для покраски авто"
 }

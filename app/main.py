@@ -34,7 +34,7 @@ async def root():
     """
     return {
         "message": "Car Issue Classification API",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "llm_provider": llm_provider.capitalize(),
         "documentation": "/docs",
     } 
